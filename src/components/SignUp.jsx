@@ -60,20 +60,13 @@ const SignUp = () => {
   };
 
   return (
-    <div className="w-full h-screen flex items-center justify-center">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-      >
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="username"
-          >
+    <div className="">
+      <form onSubmit={handleSubmit} className="">
+        <div className="">
+          <label className="" htmlFor="username">
             Username
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             id="username"
             name="username"
@@ -83,15 +76,12 @@ const SignUp = () => {
             required
           />
         </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="password"
-          >
+        <div className="">
+          <label className="" htmlFor="password">
             Password
           </label>
           <input
-            className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className=""
             type="password"
             id="password"
             name="password"
@@ -101,15 +91,12 @@ const SignUp = () => {
             required
           />
         </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="username"
-          >
+        <div className="">
+          <label className="" htmlFor="username">
             Email
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className=""
             type="email"
             id="email"
             name="email"
@@ -119,18 +106,11 @@ const SignUp = () => {
             required
           />
         </div>
-        <div className="flex items-center justify-between">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="submit"
-          >
+        <div className="">
+          <button className="" type="submit">
             Sign Up
           </button>
-          <Link
-            to="/signIn"
-            className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-            href="#"
-          >
+          <Link to="/signIn" className="" href="#">
             Already have an account ?
           </Link>
         </div>
